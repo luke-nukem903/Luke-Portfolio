@@ -1,5 +1,7 @@
 # Luke Boren Portfolio
+
 ## Table of Contents
+
 <ol>
   <li>Description</li>
   <li>Instructions</li>
@@ -17,8 +19,8 @@
   
 ## Usage
 
-  Details all projects I have worked on as well as an about me section and several professional profiles/methods with which to contact me
+  Details all projects I have worked on as well as an about me section and several profiles && , || methods with which to contact me
 
 ## License
 
-  MIT license see LICENSE.MIT for more information
+  MIT license
