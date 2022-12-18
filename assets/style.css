@@ -1,26 +1,94 @@
-.navigation ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow:hidden;
-    background-color: #2e3e77;
+#name {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  color: #ffff;
+  text-shadow: 3px 3px 5px 5px #a0addd;
 }
-.navigation ul li{
-    display: inline-block;
-    border-right: 2px solid #143dcf;
+/* background image */
+body {
+  background-image: url(./bg-geometric.jpg);
 }
-.navigation li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
+div.background{
+  background: rgba(255, 255, 255, 0.28);
+  height: 100%;
 }
-.navigation li:last-child{
-    border-right:none;
-    border-left: 2px solid #143dcf;
-}
-.navigation li a:hover{
-    background-color: #111;
 
+/* create navigation bar styling and placement */
+.navigation ul {
+  background: rgb(2, 0, 36);
+  background-image: linear-gradient(
+    rgba(2, 0, 36, 1) 0%,
+    rgba(46, 62, 119, 1) 60%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+.navigation ul li {
+  display: block;
+  border-bottom: 2px solid #143dcf;
+}
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.navigation li a:hover {
+  background-color: #a0addd;
+}
+
+
+/* Move all elements over so they're not behind the nav bar */
+main {
+  margin-left: 20%;
+}
+
+/* change font size for about me, projects, and contact */
+.about-me h2{
+  font-size: 25px;
+}
+.projects h2{
+  font-size: 25px;
+}
+.contact h2{
+  font-size: 25px;
+}
+
+/* give the contact images background so they are easier to see */
+#contacts img{
+  background: #a0addd;
+  height: 30px;
+  width: 30px;
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.projects div:nth-child(1) {
+  flex: 1 0 90%;
+}
+.projects div:nth-child(2) {
+  flex: 0 0 auto;
+}
+.projects div:nth-child(3) {
+  flex: 1 0 auto;
+}
+.projects .hero #hero img{
+  width: 90%;
+}
+.projects .surf img{
+  height: 30%;
+  width: 15%;
+}
+.projects .incoming img{
+  height: 30%;
+  width: 15%;
 }
